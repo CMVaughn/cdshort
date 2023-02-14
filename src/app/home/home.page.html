@@ -6,10 +6,10 @@
   </ion-toolbar>
 </ion-header>
 
-<div *ngIf="isLoading" id="loading">
-  <ion-spinner name="bubbles"></ion-spinner>
-</div>
 <ion-content [fullscreen]="true">
+  <div *ngIf="isLoading" id="loading">
+    <ion-spinner name="bubbles"></ion-spinner>
+  </div>
   <div id="container" *ngIf="!isLoading">
       <ion-item *ngFor="let website of websites" (click)="handleIonItemClick(website.link)">
         <h1 style="width: 100%; text-align: center">{{ website.title }}</h1>
