@@ -43,12 +43,6 @@ export class HomePage implements OnInit {
     }
   }
 
-  ionViewWillEnter() {
-    this.isLoading = true;
-  }
-  ionViewDidEnter() {
-    //this.isLoading = false;
-  }
 
   public async handleIonItemClick(code: string) {
     this.isLoading = true;
