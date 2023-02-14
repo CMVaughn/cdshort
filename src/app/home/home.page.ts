@@ -43,8 +43,10 @@ export class HomePage implements OnInit {
     }
   }
 
+  ionViewWillEnter() {
+    this.isLoading = true;
+  }
   ionViewDidEnter() {
-    //setTimeout(() => {this.isLoading = false;}, 3000);
     this.isLoading = false;
   }
 
